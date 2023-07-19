@@ -40,3 +40,24 @@ a{
     text-decoration: none;
 }
 
+ /* responsivse */
+ @media (max-width: 576px) {
+    header {
+        padding: 50px 50px;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+    
+      .right-nav {
+        flex-direction: column;
+        row-gap: 30px;
+      }
+    
+ }
+ @media (min-width: 577px) and (max-width: 992px){
+    header {
+        padding: 50px 50px;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+ }
