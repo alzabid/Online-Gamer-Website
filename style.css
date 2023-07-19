@@ -256,6 +256,37 @@ a{
   border-radius:48px ;
   border-style: none;
 }
+.games-category {
+    padding: 120px 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 24px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.04) 0%, rgba(255, 66, 165, 0.03) 100%);
+  }
+  
+  .category {
+    font-weight: bold;
+    border-radius: 50px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 10px 20px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: color 0.5s;
+  }
+  
+  .category:hover {
+    border: 2px solid #2cdaa5;
+    color: #2cdaa5;
+  }
+
+
+
 
   
 
