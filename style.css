@@ -76,7 +76,7 @@ a{
     gap: 10px;
 }
 .sign-in{
-    padding: 15px 35px;
+    padding: 16px 26px;
     border-radius: 48px;
     font-size: 15px;
     color: white;
@@ -186,7 +186,7 @@ a{
     opacity: 1;
   }
   .play-instantly{
-    padding: 0 200px 0px 200px;
+    padding: 0 200px 120px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,6 +223,41 @@ a{
     bottom: -15%;
     left: -15%;
   }
+  .career-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FF42A5;
+    margin-bottom: 50px;
+  }
+  
+  .career-description {
+    padding: 100px 0 100px 200px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+  }
+  
+  .career-description h3 {
+    font-size: 3em;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .career-description button{
+  width: max-content;
+  margin-top: 20px;
+  color: #FF42A5;
+  font-weight: bold;
+  padding: 16px 25px; 
+  border-radius:48px ;
+  border-style: none;
+}
+
+  
 
 
     
@@ -230,11 +265,7 @@ a{
     
     
     
-    
-    
-    
-    
-    
+
     
     
     /*responsivse*/
@@ -254,14 +285,18 @@ a{
         grid-template-columns: 1fr;
       }
     
-      .banner-content {  
+      .banner-content { 
+        align-items: center; 
         padding: 50px 50px;
         background-size: 100% 100%;
       }
-    
-      .banner-img {
-        margin: 0 auto;
-        justify-content: center;
+      .icons{
+        margin-left: auto;
+      }
+      .sign-in, .go-rogue {
+        padding: 14px 24px;
+        font-size: 13px;
+
       }
       .gamer-container {
         padding: 50px 50px;
@@ -291,8 +326,47 @@ a{
         grid-template-columns: 1fr;
         row-gap: 20px;
       }
+      .play-instantly {
+        padding: 0 50px 100px;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    
+      .rev {
+        flex-direction: column-reverse;
+      }
+    
+      .description, .rev .games-cover-img {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+      .description p{
+        font-size: 15px;
+        line-height: 20px;
+      }
+    
+      .img2, .rev .img2 {
+        left: 25%;
+      }
+      .career-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .career-description {
+        padding: 50px 50px;
+      }
+    
+      .item p {
+        font-size: 0.8em;
+      }
+      .career-description button{
+        padding: 14px 20px;
+        font-size: 13px;
+      }
     
     
+
  }
 
 
@@ -331,4 +405,31 @@ a{
         grid-template-columns: repeat(2, 1fr);
         row-gap: 20px;
       }
+      .play-instantly {
+        padding: 0 50px 150px;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    
+      .rev {
+        flex-direction: column-reverse;
+      }
+    
+      .description, .rev .games-cover-img {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .img2, .rev .img2 {
+        left: 25%;
+      }
+      .career-container {
+        grid-template-columns: 1fr;
+      }
+    
+      .career-description, footer, .category {
+        padding: 50px 50px;
+      }
+    
  }
