@@ -1,4 +1,42 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Work Sans', sans-serif;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  }
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left-nav span{
+    color: #F144AE;
+  }
+  .left-nav h3{
+    font-size: 3em;
+  }
+.right-nav{
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    font-size: 18px;
+}
+.nav-icon{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 18px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px 25px;
+}
+a{
+    text-decoration: none;
+}
+
