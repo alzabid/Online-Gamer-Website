@@ -333,18 +333,6 @@ a{
   }
 
 
-
-
-  
-
-
-    
-    
-    
-    
-    
-
-    
     
     /*responsivse*/
     
@@ -369,7 +357,7 @@ a{
         background-size: 100% 100%;
       }
       .icons{
-        margin-left: auto;
+        margin-left: 65px;
       }
       .sign-in, .go-rogue {
         padding: 14px 24px;
@@ -442,6 +430,9 @@ a{
         padding: 14px 20px;
         font-size: 13px;
       }
+      .category-container h2{
+        text-align: center;
+      }
       footer {
         padding: 50px 50px;
       }
@@ -453,19 +444,16 @@ a{
       .foot-menu {
         grid-template-columns: repeat(2, auto);
       }
-    
-    
-
  }
 
-
- @media (min-width: 577px) and (max-width: 992px){
+ @media (min-width: 576px) and (max-width: 992px){
     header {
         padding: 50px 50px;
         flex-direction: column;
         row-gap: 30px;
       }
-      .banner-content {  
+      .banner-content { 
+        align-items: center; 
         padding: 50px 50px;
         background-size: 100% 100%;
       }
@@ -521,13 +509,12 @@ a{
         padding: 50px 50px;
       }
       .foot-nav, .foot-icons {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 48px;
       }
     
       .foot-menu {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 48px;
-      }
-    
+      }  
  }
