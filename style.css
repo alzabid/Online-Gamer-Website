@@ -389,6 +389,9 @@ a{
       .game-videos {
         padding: 50px 50px;
       }
+      .game-videos h2{
+        font-size: 1.5em;
+      }
     
       .boxs {
         grid-template-columns: 1fr;
