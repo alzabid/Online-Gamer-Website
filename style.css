@@ -54,7 +54,7 @@ a{
 .banner-content h2{
     font-size: 2em;
 }
-.banner-content h1, .gamer-right h1{
+.banner-content h1, .gamer-drscription h1, .game-videos span, .description span{
     font-size: 4em;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -91,14 +91,14 @@ a{
     background: #4EC5F7;
     border-style: none;
 }
-.gamer {
+.gamer-container {
     padding: 95px 240px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.04) 0%, rgba(255, 66, 165, 0.03) 100%);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .gamer-right {
+  .gamer-drscription {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,23 +106,23 @@ a{
     row-gap: 20px;
   }
   
-  .gamer-right h1 {
+  .gamer-drscription h1 {
     font-size: 3em;
   }
   
-  .gamer-right h4 {
+  .gamer-drscription h4 {
     font-size: 1.7em;
     font-weight: normal;
   }
   
-  .gamer-right h3 {
+  .gamer-drscription h3 {
     font-size: 2em;
     text-align: right;
     color: #534C64; 
     font-weight: 700; 
   }
   
-  .gamer-right p { 
+  .gamer-drscription p { 
     text-align: right;
     color: #534C64;
     font-size: 18px;
@@ -185,6 +185,45 @@ a{
   .box:hover .hover {
     opacity: 1;
   }
+  .play-instantly{
+    padding: 0 200px 0px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .description{
+    width: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  row-gap: 24px;
+  }
+  .description p{
+    color: #534C64;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .description h3 {
+    font-size: 2em;
+  }
+  
+  .description h3 span {
+    font-size: 1em;
+  }
+  
+  .games-cover-img {
+    position: relative;
+  }
+  
+  .img2 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    bottom: -15%;
+    left: -15%;
+  }
+
 
     
     
@@ -224,23 +263,23 @@ a{
         margin: 0 auto;
         justify-content: center;
       }
-      .gamer {
+      .gamer-container {
         padding: 50px 50px;
         grid-template-columns: 1fr;
       }
     
-      .gamer-right {
+      .gamer-drscription {
         align-items: center;
       }
     
-      .gamer-right p {
+      .gamer-drscription p {
         text-align: center;
       }
-      .gamer-right h3 {
+      .gamer-drscription h3 {
         text-align: center;
         font-size: 1.5em;
       }
-      .gamer-right h1{
+      .gamer-drscription h1{
         text-align: center;
         font-size: 2em;
       }
@@ -272,16 +311,16 @@ a{
         margin: 0 50px;
         justify-content: center;
       }
-      .gamer {
+      .gamer-container {
         padding: 50px 50px;
         grid-template-columns: 1fr;
       }
     
-      .gamer-right {
+      .gamer-drscription {
         align-items: center;
       }
     
-      .gamer-right p{
+      .gamer-drscription p{
         text-align: center;
       }
       .game-videos {
