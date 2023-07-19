@@ -54,7 +54,7 @@ a{
 .banner-content h2{
     font-size: 2em;
 }
-.banner-content h1{
+.banner-content h1, .gamer-right h1{
     font-size: 4em;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -78,7 +78,7 @@ a{
 .sign-in{
     padding: 15px 35px;
     border-radius: 48px;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     background: #FF42A5;
     border-style: none;
@@ -86,11 +86,49 @@ a{
 .go-rogue{
     padding: 15px 35px;
     border-radius: 48px;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     background: #4EC5F7;
     border-style: none;
 }
+.gamer {
+    padding: 95px 240px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.04) 0%, rgba(255, 66, 165, 0.03) 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .gamer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    row-gap: 20px;
+  }
+  
+  .gamer-right h1 {
+    font-size: 3em;
+  }
+  
+  .gamer-right h4 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+  
+  .gamer-right h3 {
+    font-size: 2em;
+    text-align: right;
+    color: #534C64; 
+    font-weight: 700; 
+  }
+  
+  .gamer-right p { 
+    text-align: right;
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 
     
     
@@ -130,6 +168,26 @@ a{
         margin: 0 auto;
         justify-content: center;
       }
+      .gamer {
+        padding: 50px 50px;
+        grid-template-columns: 1fr;
+      }
+    
+      .gamer-right {
+        align-items: center;
+      }
+    
+      .gamer-right p {
+        text-align: center;
+      }
+      .gamer-right h3 {
+        text-align: center;
+        font-size: 1.5em;
+      }
+      .gamer-right h1{
+        text-align: center;
+        font-size: 2em;
+      }
     
     
  }
@@ -147,5 +205,17 @@ a{
       .banner-img {
         margin: 0 50px;
         justify-content: center;
+      }
+      .gamer {
+        padding: 50px 50px;
+        grid-template-columns: 1fr;
+      }
+    
+      .gamer-right {
+        align-items: center;
+      }
+    
+      .gamer-right p{
+        text-align: center;
       }
  }
