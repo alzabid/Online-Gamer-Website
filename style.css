@@ -543,7 +543,7 @@ a{
         left: 25%;
       }
       .career-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
       }
     
       .career-description, footer, .category {
@@ -558,27 +558,30 @@ a{
         column-gap: 20px;
         row-gap: 20px;
       }
-      .category{
+    .category{
     font-weight: bold;
     width: 160px;
     height: 60px;
     align-items: center;
     column-gap: 10px;
     padding: 10px 20px;
-}
-.category p{
+    }
+    .category p{
     font-size: 15px;
-}
-.category img{
+    }
+    .category img{
     height: 50px;
-}
+    }
       footer{
         justify-content: center;
         align-items: center;
       }
-      .foot-nav, .foot-icons {
+      .foot-nav {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 80px;
+      }
+      .foot-icons img{
+        height: 40px;
       }
     
       .foot-menu {
