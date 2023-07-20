@@ -15,7 +15,7 @@ header {
     align-items: center;
     gap: 20px;
 }
-.left-nav span{
+.left-nav span, footer span{
     color: #F144AE;
   }
   .left-nav h3{
@@ -54,7 +54,7 @@ a{
 .banner-content h2{
     font-size: 2em;
 }
-.banner-content h1, .gamer-drscription h1, .game-videos span, .description span, .category-container h2{
+.banner-content h1, .gamer-drscription h1, .game-videos span, .description span{
     font-size: 4em;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -129,6 +129,7 @@ a{
     font-weight: 400;
     line-height: 30px;
   }
+  /* online games funny videos */
   .game-videos {
     display: flex;
     flex-direction: column;
@@ -164,18 +165,18 @@ a{
   
   .hover {
     width: calc(100% - 10px);
-    height: calc(100% - 70px);
+    height: 380px;
     border: 5px solid #21e662;
     border-radius: 16px;
     position: absolute;
     display: flex;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     row-gap: 16px;
-    background-color: rgba(0, 0, 0, 0.70);
+    background-color: rgba(0, 0, 0, 0.7);
 }
   
   .hover h3 {
@@ -185,6 +186,8 @@ a{
   .box:hover .hover {
     opacity: 1;
   }
+
+  /* play instantly */
   .play-instantly{
     padding: 0 200px 120px 200px;
   display: flex;
@@ -223,24 +226,26 @@ a{
     bottom: -15%;
     left: -15%;
   }
+
+  /* Career */
   .career-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: #FF42A5;
-    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
   }
-  
+
+  .career-description h2 {
+    font-size: 2.5em;
+  }
   .career-description {
     padding: 100px 0 100px 200px;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 26px;
     color: white;
-  }
-  
-  .career-description h3 {
-    font-size: 3em;
   }
   
   .item {
@@ -256,17 +261,15 @@ a{
   border-radius:48px ;
   border-style: none;
 }
-.category-container h2 {
-    font-size: 2em;
-    margin-top: 120px;
-    text-align: center;
+ /* Catagory */
+.category-container {
 }
 .games-category {
     padding: 50px 240px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 24px;
   }
@@ -279,7 +282,7 @@ a{
     align-items: center;
     column-gap: 16px;
     padding: 10px 20px;
-    border: 2px solid rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(206, 19, 112, 0.05);
     transition: color 0.5s;
   }
   
@@ -287,6 +290,7 @@ a{
     border: 2px solid #2cdaa5;
     color: #2cdaa5;
   }
+  /* footer section  */
   footer {
     color: white;
     background-color: #0B0223;
@@ -331,7 +335,7 @@ a{
 
 
     
-    /*responsivse*/
+    /*Responsivse*/
     
     @media(max-width: 576px){
         header {
@@ -354,14 +358,14 @@ a{
         background-size: 100% 100%;
       }
       .icons{
-        margin-left: 65px;
+        margin-left: 40px;
       }
       .sign-in, .go-rogue {
         padding: 14px 24px;
         font-size: 13px;
       }
       .banner-img{
-        margin-left: 90px;
+        padding: 50px 50px;
       }
       .gamer-container {
         padding: 50px 50px;
@@ -417,36 +421,76 @@ a{
       }
     
       .career-description {
-        padding: 50px 50px;
+        padding: 40px 40px;
       }
+      
       .career-img{
-        margin-left: 65px;
+        padding-left: 40px;
       }
-    
-      .item p {
-        font-size: 0.8em;
-      }
-      .career-description button{
-        padding: 14px 20px;
+      .career-description p{
         font-size: 13px;
       }
-      .category-container h2{
-        text-align: center;
+      .career-description h2{
+        font-size: 1.8em;
       }
-      footer {
+      .item p {
+        font-size: 11px;
+      }
+      .career-description button{
+        padding: 12px 20px;
+        font-size: 11px;
+      }
+      .games-category {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        column-gap: 16px;
+        row-gap: 16px;
         padding: 50px 50px;
       }
+    .category{
+    width: 80px;
+    height: 30px;
+    padding: 10px 20px;
+    }
+    .category p{
+    font-size: 10px;
+    }
+    .category img{
+    height: 30px;
+    }
+
+      footer {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 50px;
+        row-gap: 30px;
+      }
     
-      .foot-nav, .foot-icons {
-        grid-template-columns: repeat(3, auto);
+      .foot-nav{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+      }
+      .foot-icons{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 50px;
+      }
+      .foot-icons img{
+        height: 26px;
       }
     
       .foot-menu {
         grid-template-columns: repeat(2, auto);
+        row-gap: 30px;
+      }
+      .foot-nav a, .foot-menu a, .copyright-text {
+        font-size: small;
       }
  }
 
- @media (min-width: 576px) and (max-width: 992px){
+ @media (min-width: 577px) and (max-width: 992px){
     header {
         padding: 50px 50px;
         flex-direction: column;
@@ -499,19 +543,46 @@ a{
         left: 25%;
       }
       .career-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
       }
     
       .career-description, footer, .category {
         padding: 50px 50px;
       }
+
+      .games-category {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+      .category{
+    font-weight: bold;
+    width: 160px;
+    height: 60px;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 20px;
+}
+.category p{
+    font-size: 15px;
+}
+.category img{
+    height: 50px;
+}
+      footer{
+        justify-content: center;
+        align-items: center;
+      }
       .foot-nav, .foot-icons {
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 48px;
+        column-gap: 80px;
       }
     
       .foot-menu {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 48px;
+        column-gap: 100px;
       }  
  }
