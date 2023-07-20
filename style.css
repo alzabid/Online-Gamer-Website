@@ -365,7 +365,7 @@ a{
         font-size: 13px;
       }
       .banner-img{
-        padding: 50px 50px;
+        padding-left: 40px;
       }
       .gamer-container {
         padding: 50px 50px;
@@ -501,6 +501,9 @@ a{
         padding: 50px 50px;
         background-size: 100% 100%;
       }
+      .icons{
+        margin-left: 40px;
+      }
     
       .banner-img {
         justify-content: center;
@@ -581,7 +584,7 @@ a{
         column-gap: 80px;
       }
       .foot-icons img{
-        height: 40px;
+        height: 35px;
       }
     
       .foot-menu {
